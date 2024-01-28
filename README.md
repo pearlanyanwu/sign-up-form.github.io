@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: []
+- Live Site URL: [https://pearlanyanwu.github.io/sign-up-form.github.io/]
 
 ## My process
 
@@ -43,6 +43,7 @@ Users should be able to:
 
 In this project, I learned how to validate name, password, and email inputs on a single click using the JS DOM manipulation.
 I also learned how to add color to a plain background image using blend-mode: multiply.
+
 ```css
 body {
   background-color: hsl(0, 100%, 74%); /* orange */
