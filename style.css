@@ -1,160 +1,129 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
 
 body {
-  background-color: hsl(0, 100%, 74%);
-  background-image: url(images/bg-intro-desktop.png);
-  background-blend-mode: multiply;
+  background-image: url("images/bg-intro-mobile.png");
   background-size: cover;
+  background-color: hsl(0, 100%, 74%);
+  background-blend-mode: multiply;
 }
 
 * {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
-.container {
+.grid-container {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto;
   justify-content: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  padding-bottom: 100px;
 }
 
-.text,
-.form {
-  height: 550px;
-  width: 600px;
-}
-
-.text,
-.form,
-small {
-  position: relative;
-}
-
-#blue-button,
-form {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.grid-container div {
+  text-align: center;
 }
 
 .text {
-  text-align: left;
+  padding: 50px 10px;
 }
 
-.text,
+.text p,
 button {
   color: hsl(0, 0%, 100%);
 }
 
 .text p:first-of-type {
-  margin-top: 31%;
-  font-size: 49px;
-  line-height: 1em;
-}
-
-.text p:first-of-type,
-input::placeholder,
-a,
-#blue-button {
-  font-weight: 700;
+  font-size: 2rem;
 }
 
 .text p:last-of-type {
-  width: 90%;
-  margin-top: -1em;
-}
-
-.form {
-  display: block;
-  text-align: center;
-}
-
-input {
-  margin: 2% 0;
-  border: 1px solid hsl(246, 25%, 77%);
-}
-
-input,
-button {
-  width: 100%;
-  padding: 15px 0;
-}
-
-input,
-input::placeholder {
-  text-indent: 30px;
-}
-
-form {
-  border: 2px solid black;
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 30px;
-  margin-top: 4%;
-  background-color: hsl(0, 0%, 100%);
+  font-size: 1rem;
 }
 
 #blue-button {
   background-color: hsl(248, 32%, 49%);
+  width: 95%;
+  padding: 20px 50px;
+  margin-bottom: 20px;
 }
 
 #green-button {
   background-color: hsl(154, 59%, 51%);
+  width: 100%;
+  margin-top: 10px;
   text-transform: uppercase;
-  margin: 1em 0;
-  letter-spacing: 2px;
+}
+
+#green-button,
+form {
+  padding: 20px;
+}
+
+form {
+  background-color: hsl(0, 0%, 100%);
+  margin: 0 10px;
+}
+
+form > p {
+  color: hsl(246, 25%, 77%);
+  font-size: 0.1rem;
+  margin-top: 20px;
+}
+
+p > a {
+  color: hsl(0, 100%, 74%);
+}
+
+p > a,
+input,
+input::placeholder,
+.text p:first-of-type {
   font-weight: 600;
 }
 
-button,
-form {
+input {
+  padding: 15px;
+  width: 90%;
+  margin: 10px 0;
+  border: 1px solid rgb(205, 203, 203);
+}
+
+input::placeholder {
+  color: hsl(249, 10%, 26%);
+}
+
+button {
   border-style: none;
 }
 
 button,
-form,
-input {
-  border-radius: 5px;
+form {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-a {
-  color: hsl(0, 100%, 74%);
-}
-
-button:hover {
+input:hover,
+button:hover,
+a:hover {
   cursor: pointer;
 }
 
-small {
-  font-size: 10%;
+form,
+input,
+button {
+  border-radius: 5px;
 }
 
-@media screen and (min-width: 375px) and (max-width: 1440px) {
+#error-icon {
+  display: none;
+}
+
+@media screen and (min-width: 1440px) {
   body {
-    background-color: hsl(0, 100%, 74%);
-    background-image: url(images/bg-intro-mobile.png);
-    background-blend-mode: multiply;
-    background-size: cover;
+    background-image: url("images/bg-intro-desktop.png");
   }
 
-  .container {
-    grid-template-columns: auto;
+  .grid-container {
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
   }
-
-  .text {
-    /* border: 1px solid black; */
-    height: 450px;
-  }
-
-  .text p {
-    /* border: 1px solid black; */
-    text-align: center;
-  }
-
-  .text p:last-of-type {
-    margin: 0 5%;
-  }
-
 }

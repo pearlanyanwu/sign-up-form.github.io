@@ -20,7 +20,7 @@ function verifyEmail() {
   if (email.value === "") {
     alert("Please enter an email address.");
   } else if (!regex.test(email.value)) {
-    alert("Please enter a valid email address Example: username@example.com.");
+    alert("Please enter a valid email address. Example: username@example.com.");
   }
 }
 
