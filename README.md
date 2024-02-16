@@ -10,6 +10,7 @@ This is a solution to the [Intro component with sign up form challenge on Fronte
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
 
 ## Overview
 
@@ -42,8 +43,9 @@ I also learned how to add color to a plain background image using the blend-mode
 
 ```css
 body {
+  background-image: url("images/bg-intro-mobile.png");
+  background-size: cover;
   background-color: hsl(0, 100%, 74%);
-  background-image: url(images/bg-intro-mobile.png);
   background-blend-mode: multiply;
 }
 ```
@@ -56,3 +58,7 @@ submitButton.addEventListener("click", () => {
   verifyEmail();
 });
 ```
+
+### Continued Development
+
+I intend to implement the active states in the desktop view in the near future.
