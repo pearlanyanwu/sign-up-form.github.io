@@ -4,19 +4,21 @@ function verifyName() {
   let firstname = document.getElementById("firstname");
   let lastname = document.getElementById("lastname");
   if (firstname.value === "" || lastname.value === "") {
+    alert("Please enter your first and last name");
   }
 }
 
 function verifyPassword() {
   let password = document.getElementById("password");
   if (password.value === "") {
+    alert("Please enter a password");
   }
 }
 
 function verifyEmail() {
   let email = document.getElementById("email");
-  if (email.value === "") {
-  } else if (!regex.test(email.value)) {
+  if (email.value === "" || (!regex.test(email.value))) {
+    alert("Please enter a valid email address");
   }
 }
 
