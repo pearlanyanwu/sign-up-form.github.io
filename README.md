@@ -58,7 +58,3 @@ submitButton.addEventListener("click", () => {
   verifyEmail();
 });
 ```
-
-### Continued Development
-
-I intend to implement the active states in the desktop view in the near future.
